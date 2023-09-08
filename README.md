@@ -1,51 +1,61 @@
-# Capstone_project-BackEnd
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- ... (Rest of the head content) -->
-</head>
-<body>
-    <h1 class="main-heading">Metered Calculator</h1>
-    <div class="container">
-        <div class="calculator">
-            <!-- ... (Existing calculator content) -->
+/* ... (Existing styles) */
 
-            <div class="calculator-results">
-                <div class="calculator-result-box">
-                    <p class="result-label">Points:</p>
-                    <p id="resultPoints" class="result-value"></p>
-                </div>
-                <div class="calculator-result-box">
-                    <p class="result-label">Cost:</p>
-                    <p id="resultCost" class="result-value"></p>
-                </div>
-            </div>
+.calculator-results {
+    display: flex;
+    justify-content: space-between;
+}
 
-            <div class="note-points">
-                <!-- Note points here -->
-            </div>
-        </div>
-        
-        <div class="cart">
-            <h2>Your Cart</h2>
-            <div id="cartList" class="cart-list">
-                <!-- Cart items here -->
-            </div>
-            <div class="cart-total-box">
-                <p class="cart-total-label">Total Cost:</p>
-                <p id="cartTotal" class="cart-total-value"></p>
-            </div>
-            <div class="discount-input">
-                <!-- Discount input and buttons here -->
-            </div>
-            <div class="note-points">
-                <!-- Note points here -->
-            </div>
-        </div>
-    </div>
+.calculator-result-box {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
 
-    <button id="resetPageBtn" class="button">Reset Page</button>
+.result-label {
+    font-weight: bold;
+    margin: 0;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+.result-value {
+    margin: 0;
+}
+
+.cart-list {
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.cart-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item-title {
+    font-weight: bold;
+    margin: 0;
+}
+
+.cart-item-details {
+    margin: 0;
+}
+
+.cart-total-box {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.cart-total-label {
+    font-weight: bold;
+    margin: 0;
+}
+
+.cart-total-value {
+    margin: 0;
+}
+
+/* ... (Rest of the styles) */
